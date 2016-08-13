@@ -1,5 +1,5 @@
 /**
-  * Created by stephaniejain on 8/13/16.
+  * Created by nishitjain on 8/13/16.
   */
 object BubbleSort {
 
