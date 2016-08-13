@@ -1,3 +1,5 @@
+import scala.util.Random
+
 /**
   * Created by nishitjain on 8/13/16.
   */
@@ -29,10 +31,15 @@ object BubbleSort {
 
 
   def main(args: Array[String]) {
-    val inputList = List(787777,3, 1,8878, 6, 8, 10,0,99999, 9, 5, 88, 33,989, 22, 11)
-    val inputRange = 0 to inputList.length-1
+    var inputList: List[Int] = List.empty
 
-    //BubbleSort.swapElem(inputList,0).foreach(println)
+    val inputRange = 1 until 1000
+    val r = Random
+
+    inputRange.foreach{ x =>
+      inputList=r.nextInt(10000) :: inputList
+    }
+
 
     BubbleSort.bubbleSort(inputList,0).foreach(println)
 
